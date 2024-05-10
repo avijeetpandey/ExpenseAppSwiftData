@@ -11,12 +11,19 @@ import SwiftData
 // MARK: - RootView
 struct RootView: View {
     @State private var isShowingExpenseSheet = false
+    @Environment(\.modelContext) var context
     @Query(sort: \Expense.date, animation: .smooth) var expenses: [Expense]
     
     var body: some View {
         NavigationStack {
-            List(expenses) { expense in
-                ExpenseCell(expense: expense)
+            List {
+                ForEach(expenses) { expense in
+                    ExpenseCell(expense: expense)
+                }.onDelete(perform: { indexSet in
+                    for index in indexSet {
+                        context.delete(expenses[index])
+                    }
+                })
             }.navigationTitle("Expenses")
                 .navigationBarTitleDisplayMode(.large)
                 .sheet(isPresented: $isShowingExpenseSheet) {
