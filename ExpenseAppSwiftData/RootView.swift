@@ -20,7 +20,7 @@ struct RootView: View {
             }.navigationTitle("Expenses")
                 .navigationBarTitleDisplayMode(.large)
                 .sheet(isPresented: $isShowingExpenseSheet) {
-                    Text("Presented")
+                    AddExpenseSheet()
                 }.toolbar {
                     if !expenses.isEmpty {
                         Button("Add Expense", systemImage: "plus") {
