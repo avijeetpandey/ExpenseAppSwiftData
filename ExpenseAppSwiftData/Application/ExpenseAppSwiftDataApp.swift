@@ -11,10 +11,12 @@ import SwiftData
 @main
 struct ExpenseAppSwiftDataApp: App {
     var sharedModelContainer: ModelContainer = {
+        
         let schema = Schema([
-            Item.self,
+            Expense.self,
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
 
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
@@ -25,7 +27,7 @@ struct ExpenseAppSwiftDataApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
         .modelContainer(sharedModelContainer)
     }
