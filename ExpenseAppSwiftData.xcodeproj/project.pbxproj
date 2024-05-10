@@ -14,6 +14,7 @@
 		8A8867002BEE0B0C00D1EC0A /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8866FF2BEE0B0C00D1EC0A /* Expense.swift */; };
 		8A8867032BEE0EAF00D1EC0A /* EmptyExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8867022BEE0EAF00D1EC0A /* EmptyExpenseView.swift */; };
 		8A8867052BEE0F5800D1EC0A /* AddExpenseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8867042BEE0F5800D1EC0A /* AddExpenseSheet.swift */; };
+		8A8867072BEE10F300D1EC0A /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8867062BEE10F300D1EC0A /* ExpenseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8A8866FF2BEE0B0C00D1EC0A /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		8A8867022BEE0EAF00D1EC0A /* EmptyExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyExpenseView.swift; sourceTree = "<group>"; };
 		8A8867042BEE0F5800D1EC0A /* AddExpenseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseSheet.swift; sourceTree = "<group>"; };
+		8A8867062BEE10F300D1EC0A /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				8A8867022BEE0EAF00D1EC0A /* EmptyExpenseView.swift */,
 				8A8867042BEE0F5800D1EC0A /* AddExpenseSheet.swift */,
+				8A8867062BEE10F300D1EC0A /* ExpenseCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				8A8866EF2BEE08E700D1EC0A /* RootView.swift in Sources */,
 				8A8866ED2BEE08E700D1EC0A /* ExpenseAppSwiftDataApp.swift in Sources */,
 				8A8867032BEE0EAF00D1EC0A /* EmptyExpenseView.swift in Sources */,
+				8A8867072BEE10F300D1EC0A /* ExpenseCell.swift in Sources */,
 				8A8867052BEE0F5800D1EC0A /* AddExpenseSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

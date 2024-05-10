@@ -11,6 +11,7 @@ import SwiftUI
 // MARK: - AddExpenseSheet
 struct AddExpenseSheet: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) var context
     
     @State private var name: String = ""
     @State private var date: Date = .now
@@ -35,6 +36,12 @@ struct AddExpenseSheet: View {
                     ToolbarItemGroup(placement: .topBarLeading) {
                         Button("Save") {
                             // button to save the code goes here
+                            let expense = Expense(name: name,
+                                                  date: date,
+                                                  value: value)
+                            
+                            context.insert(expense)
+                            dismiss()
                         }
                     }
                 }

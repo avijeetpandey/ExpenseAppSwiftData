@@ -11,12 +11,12 @@ import SwiftData
 // MARK: - RootView
 struct RootView: View {
     @State private var isShowingExpenseSheet = false
-    var expenses: [Expense] = []
+    @Query(sort: \Expense.date, animation: .smooth) var expenses: [Expense]
     
     var body: some View {
         NavigationStack {
             List(expenses) { expense in
-                Text("Hello")
+                ExpenseCell(expense: expense)
             }.navigationTitle("Expenses")
                 .navigationBarTitleDisplayMode(.large)
                 .sheet(isPresented: $isShowingExpenseSheet) {
