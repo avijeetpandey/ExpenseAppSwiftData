@@ -15,6 +15,7 @@
 		8A8867032BEE0EAF00D1EC0A /* EmptyExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8867022BEE0EAF00D1EC0A /* EmptyExpenseView.swift */; };
 		8A8867052BEE0F5800D1EC0A /* AddExpenseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8867042BEE0F5800D1EC0A /* AddExpenseSheet.swift */; };
 		8A8867072BEE10F300D1EC0A /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8867062BEE10F300D1EC0A /* ExpenseCell.swift */; };
+		8A8867092BEE153B00D1EC0A /* UpdateExpenseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8867082BEE153B00D1EC0A /* UpdateExpenseSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8A8867022BEE0EAF00D1EC0A /* EmptyExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyExpenseView.swift; sourceTree = "<group>"; };
 		8A8867042BEE0F5800D1EC0A /* AddExpenseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseSheet.swift; sourceTree = "<group>"; };
 		8A8867062BEE10F300D1EC0A /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
+		8A8867082BEE153B00D1EC0A /* UpdateExpenseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateExpenseSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				8A8867022BEE0EAF00D1EC0A /* EmptyExpenseView.swift */,
 				8A8867042BEE0F5800D1EC0A /* AddExpenseSheet.swift */,
 				8A8867062BEE10F300D1EC0A /* ExpenseCell.swift */,
+				8A8867082BEE153B00D1EC0A /* UpdateExpenseSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				8A8866EF2BEE08E700D1EC0A /* RootView.swift in Sources */,
 				8A8866ED2BEE08E700D1EC0A /* ExpenseAppSwiftDataApp.swift in Sources */,
 				8A8867032BEE0EAF00D1EC0A /* EmptyExpenseView.swift in Sources */,
+				8A8867092BEE153B00D1EC0A /* UpdateExpenseSheet.swift in Sources */,
 				8A8867072BEE10F300D1EC0A /* ExpenseCell.swift in Sources */,
 				8A8867052BEE0F5800D1EC0A /* AddExpenseSheet.swift in Sources */,
 			);

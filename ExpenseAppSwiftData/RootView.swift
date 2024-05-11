@@ -13,12 +13,16 @@ struct RootView: View {
     @State private var isShowingExpenseSheet = false
     @Environment(\.modelContext) var context
     @Query(sort: \Expense.date, animation: .smooth) var expenses: [Expense]
+    @State private var expenseToEdit: Expense?
     
     var body: some View {
         NavigationStack {
             List {
                 ForEach(expenses) { expense in
                     ExpenseCell(expense: expense)
+                        .onTapGesture {
+                            expenseToEdit = expense
+                        }
                 }.onDelete(perform: { indexSet in
                     for index in indexSet {
                         context.delete(expenses[index])
@@ -26,6 +30,9 @@ struct RootView: View {
                 })
             }.navigationTitle("Expenses")
                 .navigationBarTitleDisplayMode(.large)
+                .sheet(item: $expenseToEdit) { expense in
+                    UpdateExpenseSheet(expense: expense)
+                }
                 .sheet(isPresented: $isShowingExpenseSheet) {
                     AddExpenseSheet()
                 }.toolbar {
@@ -41,8 +48,4 @@ struct RootView: View {
                 }
         }
     }
-}
-
-#Preview {
-    RootView()
 }
