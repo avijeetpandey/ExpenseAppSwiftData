@@ -1,0 +1,15 @@
+{
+  "originHash" : "cd5a00fbf80340f0dfb96ddfbf4617021a2d62a67167c3366e75ab8d6893dc9b",
+  "pins" : [
+    {
+      "identity" : "blaze",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/avijeetpandey/Blaze",
+      "state" : {
+        "branch" : "master",
+        "revision" : "8b10428f7b413efe322dba2c946b9118dd370b02"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import Blaze
 
 // MARK: - RootView
 struct RootView: View {
@@ -48,4 +49,8 @@ struct RootView: View {
                 }
         }
     }
+}
+
+#Preview {
+    RootView()
 }
